@@ -12,4 +12,16 @@ export class BottomButtonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hoverIn() {
+    var btns = document.getElementById('btn')
+    btns.style.opacity = '1';
+  }
+
+  hoverOut() {
+    var btns = document.getElementById('btn')
+    setTimeout(() => {
+      btns.style.opacity = '0';
+    }, 2000);
+  }
+
 }

@@ -7,11 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { BottomButtonsComponent } from './bottom-buttons/bottom-buttons.component';
+import { YVideoComponent } from './y-video/y-video.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { MatIconModule } from '@angular/material/icon'
     HomeComponent,
     TopBarComponent,
     ImageViewerComponent,
-    BottomButtonsComponent
+    BottomButtonsComponent,
+    YVideoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
