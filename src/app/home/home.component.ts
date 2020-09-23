@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
 
 MANUAL FOR PARAMETERS
 
-type = [img,vdo,yvdo,pdf,doc,excel,*rtf]
+type = [img,vdo,yvdo,pdf,doc,excel,*rtf,gview]
 src = [www.xyz.com]   //link to resource
 yid = [xyz123]    //video id in case of youtube type
 title = [asd asd ]    // Title Of the file

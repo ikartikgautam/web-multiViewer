@@ -9,11 +9,14 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { BottomButtonsComponent } from './bottom-buttons/bottom-buttons.component';
 import { YVideoComponent } from './y-video/y-video.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MiscService } from './services/misc.service';
 
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { GViewerComponent } from './g-viewer/g-viewer.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     TopBarComponent,
     ImageViewerComponent,
     BottomButtonsComponent,
-    YVideoComponent
+    YVideoComponent,
+    GViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +36,11 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     MatButtonModule,
     MatIconModule,
     YouTubePlayerModule,
+    MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [
+    MiscService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
