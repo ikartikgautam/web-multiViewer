@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "multiViewer"
+    }
+  },
+  "defaultProject": "multiViewer",
+  "cli": {
+    "analytics": "43ed657c-64e9-4920-a78a-ee288dd84fd1"
+  }
 }
