@@ -1,0 +1,11 @@
+$height: 5vh;
+
+.bar{
+    height: $height;
+    width: 100%;
+}
+.title {
+    margin-left: 24px;
+    color: white;
+    line-height: $height;
+}

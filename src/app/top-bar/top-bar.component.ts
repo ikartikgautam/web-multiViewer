@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  title = 'File View'
+
+  constructor(public para: ActivatedRoute) {
+
+    // Extract query parameters from url
+    this.para.queryParams.subscribe(params => {
+      if(params['title'])
+      this.title = params['title']
+    });
+
+  }
 
   ngOnInit(): void {
   }
