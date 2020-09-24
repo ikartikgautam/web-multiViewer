@@ -23,6 +23,4 @@ export class MsViewerComponent implements OnInit {
 
   }
 
-
-
 }

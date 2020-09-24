@@ -31,13 +31,20 @@ export class HomeComponent implements OnInit {
 
   }
 
+  enableSideButtons() {
+    if (this.type == 'vdo' || this.type == 'yvdo')
+      return false;
+    return true;
+  }
+
+
 }
 
 /* =================
 
 MANUAL FOR PARAMETERS
 
-type = [img,vdo,yvdo,pdf,doc,excel,*rtf,gview]
+type = [img,vdo,yvdo,pdf,gview,msview]
 src = [www.xyz.com]   //link to resource
 yid = [xyz123]    //video id in case of youtube type
 title = [asd asd ]    // Title Of the file

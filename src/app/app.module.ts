@@ -18,6 +18,9 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 import { GViewerComponent } from './g-viewer/g-viewer.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MsViewerComponent } from './ms-viewer/ms-viewer.component';
+// pdf
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { MsViewerComponent } from './ms-viewer/ms-viewer.component';
     BottomButtonsComponent,
     YVideoComponent,
     GViewerComponent,
-    MsViewerComponent
+    MsViewerComponent,
+    PdfViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { MsViewerComponent } from './ms-viewer/ms-viewer.component';
     MatButtonModule,
     MatIconModule,
     YouTubePlayerModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    PdfViewerModule,
   ],
   providers: [
     MiscService,

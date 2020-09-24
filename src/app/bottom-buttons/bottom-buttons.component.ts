@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-bottom-buttons',
@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomButtonsComponent implements OnInit {
 
+  @Output() zoomInFn = new EventEmitter();
+  @Output() zoomOutFn = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  zoomIn() {
+    this.zoomInFn.emit();
+  }
+
+  zoomOut() {
+    this.zoomOutFn.emit();
+  }
+
+  fullScreen() {
+    var element = document.body;
+    var requestMethod = element.requestFullscreen;
+    requestMethod.call(element)
   }
 
   hoverIn() {

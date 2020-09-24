@@ -1,19 +1,19 @@
 <div (mouseover)="hoverIn()" (mouseleave)="hoverOut()" class="btn-container" id="btn">
 
-        <span>
-            <button mat-fab aria-label="download" color="primary">
-                <mat-icon>get_app</mat-icon>
-            </button>
-        </span>
-        <span>
-            <button mat-fab aria-label="download" color="primary">
-                <mat-icon>add</mat-icon>
-            </button>
-        </span>
-        <span>
-            <button mat-fab aria-label="download" color="primary">
-                <mat-icon>remove</mat-icon>
-            </button>
-        </span>
+    <span>
+        <button mat-fab aria-label="download" color="primary" (click)="fullScreen()">
+            <mat-icon>zoom_out_map</mat-icon>
+        </button>
+    </span>
+    <span>
+        <button mat-fab aria-label="download" color="primary" (click)="zoomIn()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </span>
+    <span>
+        <button mat-fab aria-label="download" color="primary" (click)="zoomOut()">
+            <mat-icon>remove</mat-icon>
+        </button>
+    </span>
 
 </div>

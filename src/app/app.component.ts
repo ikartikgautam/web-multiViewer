@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,21 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent {
 
-  type
-
-  constructor(public para: ActivatedRoute) {
-
-    // Extract query parameters from url
-    this.para.queryParams.subscribe(params => {
-      this.type = params['type']
-    });
-
-  }
-
-  enableSideButtons() {
-    if (this.type == 'vdo' || this.type == 'yvdo')
-      return false;
-    return true;
+  constructor() {
   }
 
 }

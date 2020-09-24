@@ -4,11 +4,19 @@
     <app-image-viewer *ngIf="type=='img'" [source]="src"></app-image-viewer>
     <!-- IMAGE VIEWER -->
 
+    <!-- YOUTUBE VIEWER -->
     <app-y-video *ngIf="type=='yvdo'" [id]="yid"></app-y-video>
+    <!-- YOUTUBE VIEWER -->
 
+    <!-- GOOGLE DOC VIEWER -->
     <app-g-viewer *ngIf="type=='gview'" [url]="src"></app-g-viewer>
+    <!-- GOOGLE DOC VIEWER -->
 
+    <!-- MS DOC VIEWER -->
     <app-ms-viewer *ngIf="type=='msview'" [url]="src"></app-ms-viewer>
+    <!-- MS DOC VIEWER -->
+
+    <app-pdf-viewer *ngIf="type=='pdf'" [url]="src"></app-pdf-viewer>
 
 </div>
 
