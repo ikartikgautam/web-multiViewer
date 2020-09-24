@@ -4,9 +4,11 @@
     <app-image-viewer *ngIf="type=='img'" [source]="src"></app-image-viewer>
     <!-- IMAGE VIEWER -->
 
-    <app-y-video  *ngIf="type=='yvdo'" [id]="yid"></app-y-video>
+    <app-y-video *ngIf="type=='yvdo'" [id]="yid"></app-y-video>
 
     <app-g-viewer *ngIf="type=='gview'" [url]="src"></app-g-viewer>
+
+    <app-ms-viewer *ngIf="type=='msview'" [url]="src"></app-ms-viewer>
 
 </div>
 

@@ -31,6 +31,7 @@ export class GViewerComponent implements OnInit {
     var refresher = setInterval(() => {
       if (this.loaded) {
         clearInterval(refresher);
+        return;
       }
       iframe.src = iframe.src
     }, 5000);

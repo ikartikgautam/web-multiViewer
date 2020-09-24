@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { GViewerComponent } from './g-viewer/g-viewer.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MsViewerComponent } from './ms-viewer/ms-viewer.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     ImageViewerComponent,
     BottomButtonsComponent,
     YVideoComponent,
-    GViewerComponent
+    GViewerComponent,
+    MsViewerComponent
   ],
   imports: [
     BrowserModule,
