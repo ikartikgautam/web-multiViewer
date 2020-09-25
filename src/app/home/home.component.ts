@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   src
   yid
 
+  voptions
+
   constructor(public para: ActivatedRoute) {
 
     // Extract query parameters from url
@@ -25,6 +27,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.voptions = { autoplay: true, controls: true, sources: [{ src: this.src, type: 'video/mp4' }] }
+
     console.log(this.type)
     console.log(this.src)
     console.log(this.yid)
@@ -36,7 +40,6 @@ export class HomeComponent implements OnInit {
       return false;
     return true;
   }
-
 
 }
 

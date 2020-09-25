@@ -18,6 +18,10 @@
 
     <app-pdf-viewer *ngIf="type=='pdf'" [url]="src"></app-pdf-viewer>
 
+    <app-video *ngIf="type=='vdo'"
+        [options]="voptions">
+    </app-video>
+
 </div>
 
 <!-- https://coryrylan.com/assets/images/posts/types/angular-1280x960.png -->

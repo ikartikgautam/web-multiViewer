@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -20,13 +19,15 @@ $multiViewer-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$multiViewer-theme: mat-light-theme((
-  color: (
-    primary: $multiViewer-primary,
-    accent: $multiViewer-accent,
-    warn: $multiViewer-warn,
-  )
-));
+$multiViewer-theme: mat-light-theme(
+    (
+        color: (
+            primary: $multiViewer-primary,
+            accent: $multiViewer-accent,
+            warn: $multiViewer-warn,
+        ),
+    )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -34,12 +35,17 @@ $multiViewer-theme: mat-light-theme((
 @include angular-material-theme($multiViewer-theme);
 
 /* You can add global styles to this file, and also import other style files */
+
+/* vjs-player.component.css */
+@import "~video.js/dist/video-js.css";
+/* vjs-player.component.css */
+
 body {
     margin: 0;
 }
 
-.tPColor{
-background-color: #3f51b5;
+.tPColor {
+    background-color: #3f51b5;
 }
 
 ::-webkit-scrollbar {
@@ -57,5 +63,11 @@ background-color: #3f51b5;
     background-color: gray;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

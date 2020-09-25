@@ -21,6 +21,7 @@ import { MsViewerComponent } from './ms-viewer/ms-viewer.component';
 // pdf
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
+import { VideoComponent } from './video/video.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
     YVideoComponent,
     GViewerComponent,
     MsViewerComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
